@@ -1,0 +1,288 @@
+/* These styles are just to make it easier to see the blocks, initially. */
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: BodyText;     
+    src: url(SFNSDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: Title;     
+    src: url(SFNSDisplay-Medium.otf);
+}
+
+
+body{
+	font-family: BodyText; 
+	text-align: left;	
+}
+
+a {
+	color: black;
+}
+
+
+h1{
+	line-height: 3vw;
+	padding-bottom: 2vw;
+	font-size: 1.5vw;
+	font-family: Title;
+}
+
+
+p{
+	line-height: 2vw;
+}
+
+.text_width_adjust{
+	padding: 0 10vw 3vw 10vw
+}
+
+
+
+header{
+	width: 5vw;
+	height:auto;
+	position: fixed;
+	top: 2vw;
+	left: 5vw;
+	z-index: 999;
+	background-color: none;
+}
+
+
+#menu_icon{
+	position: fixed;
+	z-index: 8888;
+	top:3vw;
+	right:5vw;
+	width: 2vw;
+	height: auto;
+	cursor:pointer;
+}
+
+#mySidebar{
+	position: fixed;
+	z-index: 666;
+	right:0;
+	top:0;
+	height: 100%;
+	width: 25vw;
+	padding:3vw 5vw 5vw 5vw;
+	line-height: 3vw;
+	background-color: #8CF2E9;
+	overflow:auto;
+	display: none;
+}
+
+li{
+	list-style: none;
+}
+
+#menu_works{
+	display: block;
+	margin-top: 3vw;
+	margin-bottom: 3vw;
+}
+
+.top_image{
+	margin-bottom: 6vw;
+}
+
+#horizontal {
+	display: block;
+	opacity: 100%;
+	position: absolute;
+	top: 10vw;
+	width: 80vw;
+	left: 15vw;
+}
+
+#vertical{
+	display: none;
+	opacity: none;
+	position: absolute;
+	top: 10vw;
+	width: 70vw;
+	left: 15vw;	
+}
+
+section{
+	margin-bottom: 10vw;
+}
+
+.two_column {
+	position: relative;
+	left: 0;
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0 12vw;
+}
+
+.one_column {
+	position: relative;
+	display: block;
+	left: 0;
+	width: 100%;
+}
+
+
+section div {
+	padding: 0;	
+}
+
+
+b{
+	font-size: 1vw;
+	font-family:Title;
+}
+
+em{
+	color: #999999;
+}
+
+em, small{
+	font-size: 1vw;
+	font-family:BodyText;
+}
+
+b, em, small{
+	line-height: 1.5vw;
+}
+
+
+
+@media (max-width: 812px){
+
+	.two-column{
+		display: flex;
+		column-gap:2vw;
+		margin-top: -700px;
+	}
+
+	#menu_icon{
+		position: fixed;
+		z-index: 8888;
+		top:3vw;
+		right:6vw;
+		width: 3vw;
+		height: auto;
+		cursor:pointer;
+	}
+
+	#mySidebar{
+		position: fixed;
+		z-index: 666;
+		right:0;
+		top:0;
+		height: 100%;
+		width: 40vw;
+		padding:10vw;
+		line-height: 5vw;
+		overflow:auto;
+		display: none;
+	}
+
+	#mySidebar a{
+		font-size: 1vw;
+	}
+
+	h1{
+		font-size: 2.2vw;
+		line-height: 4vw;
+	}
+
+	b{
+		font-size: 1.5vw;
+		font-family:Title;
+	}
+
+	em{
+		color: #999999;
+	}
+
+	em, small{
+		font-size: 1.5vw;
+		font-family:BodyText;
+	}
+
+
+
+@media (max-width: 450px){
+
+	#horizontal {
+		display: none;
+		opacity: none;
+	}
+
+	#vertical{
+		display: block;
+		opacity: 100%;
+	}
+
+	header{
+		width: 10vw;
+	}
+
+	section{
+		max-width: 90vw;
+		margin:15vw 0 10vw 0;
+	}
+	
+	#menu_icon{
+		position: fixed;
+		z-index: 8888;
+		top:5vw;
+		right:6vw;
+		width: 6vw;
+		height: auto;
+		cursor:pointer;
+	}
+
+	#mySidebar{
+		position: fixed;
+		z-index: 666;
+		right:0;
+		top:0;
+		height: 100%;
+		width: 60vw;
+		padding:10vw;
+		line-height: 10vw;
+		overflow:auto;
+		display: none;
+	}
+
+	.text_width_adjust{
+		padding: 0;
+	}
+
+	h1{
+		font-size: 4vw;
+		line-height: 6vw;
+		font-family:Title;
+	}
+
+	b{
+		font-size: 4vw;
+		font-family:Title;
+	}
+
+	em{
+		color: black;
+	}
+
+	em, small{
+		font-size: 4vw;
+		font-family:BodyText;
+	}
+
+
+
+}
+
+
+
